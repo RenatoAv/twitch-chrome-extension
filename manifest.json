@@ -1,0 +1,22 @@
+{
+    "name": "Twitch explorer filter",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Twitch explorer filter"
+    },
+    "permissions": ["tabs", "storage"],
+    "icons": 
+        { 
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png" 
+        }
+}
